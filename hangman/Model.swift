@@ -9,14 +9,16 @@
 import Foundation
 import Darwin
 
-class Model {
+class Gameplay {
     var lettersPicked :[String] = []
     
     var revealString: String = ""
     
     var wordToGuess: String = ""
     
-    static let shared = Model()
+    var misses: Int = 0
+    
+    static let shared = Gameplay()
     
     init() {
         wordToGuess = getRandomWord()
@@ -42,6 +44,9 @@ class Model {
     func addLetter(letter: String) {
         lettersPicked.append(letter)
         revealString = calculateRevealString()
+        if !wordToGuess.containsString(letter) {
+            misses += 1
+        }
     }
     
 }
@@ -61,5 +66,4 @@ extension String {
     subscript (r: Range<Int>) -> String {
         return substringWithRange(Range(start: startIndex.advancedBy(r.startIndex), end: startIndex.advancedBy(r.endIndex)))
     }
-
 }
