@@ -12,6 +12,7 @@
 		A7CBA1031C0C7F1300E0DDAC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A7CBA1011C0C7F1300E0DDAC /* Main.storyboard */; };
 		A7CBA1051C0C7F1300E0DDAC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A7CBA1041C0C7F1300E0DDAC /* Assets.xcassets */; };
 		A7CBA1081C0C7F1300E0DDAC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A7CBA1061C0C7F1300E0DDAC /* LaunchScreen.storyboard */; };
+		A7CBA1101C0C849F00E0DDAC /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7CBA10F1C0C849F00E0DDAC /* Model.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +23,7 @@
 		A7CBA1041C0C7F1300E0DDAC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A7CBA1071C0C7F1300E0DDAC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A7CBA1091C0C7F1300E0DDAC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A7CBA10F1C0C849F00E0DDAC /* Model.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +62,7 @@
 				A7CBA1041C0C7F1300E0DDAC /* Assets.xcassets */,
 				A7CBA1061C0C7F1300E0DDAC /* LaunchScreen.storyboard */,
 				A7CBA1091C0C7F1300E0DDAC /* Info.plist */,
+				A7CBA10F1C0C849F00E0DDAC /* Model.swift */,
 			);
 			path = hangman;
 			sourceTree = "<group>";
@@ -135,6 +138,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A7CBA1101C0C849F00E0DDAC /* Model.swift in Sources */,
 				A7CBA1001C0C7F1300E0DDAC /* ViewController.swift in Sources */,
 				A7CBA0FE1C0C7F1300E0DDAC /* AppDelegate.swift in Sources */,
 			);
@@ -286,6 +290,7 @@
 				A7CBA10E1C0C7F1300E0DDAC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

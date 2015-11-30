@@ -10,8 +10,17 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    @IBOutlet weak var revealLabel: UILabel!
+    @IBOutlet weak var lettersPicked: UILabel!
+    
+    @IBOutlet weak var input: UITextField!
+    
+    let model = Model.shared
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        revealLabel.text = ""
+        lettersPicked.text = ""
         // Do any additional setup after loading the view, typically from a nib.
     }
 
@@ -19,7 +28,11 @@ class ViewController: UIViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-
-
+    
+    @IBAction func inputGiven(sender: UITextField) {
+        model.addLetter(sender.text!)
+        sender.text = ""
+        revealLabel.text = model.revealString
+        lettersPicked.text = model.lettersPicked.joinWithSeparator(" ")
+    }
 }
-
